@@ -24,7 +24,9 @@ public class KelilingLingkaranActivity extends AppCompatActivity {
     }
 
     public void onClickHitung() {
-        Toast.makeText(this, "Hasil here", Toast.LENGTH_SHORT).show();
-        // tulis kode disini
+        double jariJari = Double.parseDouble(binding.editTextJariJari.getText().toString());
+        // hitung di sini
+
+        binding.textViewHasil.setText("hasil adalah : ");
     }
 }

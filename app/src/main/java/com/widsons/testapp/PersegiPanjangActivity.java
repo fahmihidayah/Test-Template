@@ -23,6 +23,9 @@ public class PersegiPanjangActivity extends AppCompatActivity {
         binding.setActivity(this);
     }
     public void onClickHitung() {
-        Toast.makeText(this, "Hasil here", Toast.LENGTH_SHORT).show();
+        double panjang = Double.parseDouble(binding.editTextPanjang.getText().toString());
+        double lebar = Double.parseDouble(binding.editTextLebar.getText().toString());
+        // hitung di sini
+        binding.textViewHasil.setText("hasil adalah : ");
     }
 }

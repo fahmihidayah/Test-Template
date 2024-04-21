@@ -24,6 +24,9 @@ public class SegiTigaActivity extends AppCompatActivity {
     }
 
     public void onClickHitung() {
-        Toast.makeText(this, "Hasil here", Toast.LENGTH_SHORT).show();
+        double alas = Double.parseDouble(binding.editTextAlas.getText().toString());
+        double tinggi = Double.parseDouble(binding.editTextTinggi.getText().toString());
+        // hitung di sini
+        binding.textViewHasil.setText("hasil adalah : ");
     }
 }
