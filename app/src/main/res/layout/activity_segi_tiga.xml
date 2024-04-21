@@ -6,7 +6,7 @@
     <data>
         <variable
             name="activity"
-            type="com.widsons.testapp.PageOneActivity" />
+            type="com.widsons.testapp.SegiTigaActivity" />
 
     </data>
 
@@ -15,47 +15,46 @@
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PageOneActivity">
+        tools:context=".SegiTigaActivity">
 
         <EditText
-            android:id="@+id/editTextSatu"
+            android:id="@+id/editTextTinggi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Text Satu"
-            android:inputType="text"
+            android:inputType="number"
+            android:hint="Tinggi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextDua"
+            android:id="@+id/editTextAlas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:ems="10"
-            android:hint="Text Dua"
-            android:inputType="text"
+            android:inputType="number"
+            android:hint="Alas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextSatu" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTinggi" />
 
         <Button
-            android:id="@+id/button"
+            android:onClick="@{() -> activity.onClickHitung()}"
+            android:id="@+id/buttonHitung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Operator"
-            app:layout_constraintEnd_toEndOf="@+id/editTextDua"
-            app:layout_constraintStart_toStartOf="@+id/editTextDua"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDua" />
+            android:text="Hitung Luas Segitiga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAlas" />
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewHasil"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Hasil"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonHitung" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

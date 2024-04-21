@@ -4,57 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="activity"
-            type="com.widsons.testapp.MainActivity" />
-
+            type="com.widsons.testapp.PersegiPanjangActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".PersegiPanjangActivity">
 
-
-        <Button
-            android:onClick="@{() -> activity.onClickGoToKelilingLingkaran()}"
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editTextPanjang"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Keliling Lingkaran"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Panjang"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:onClick="@{() -> activity.onClickGoToLuasLingkaran()}"
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editTextLebar"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Luas Lingkaran"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Lebar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextPanjang" />
 
         <Button
-            android:onClick="@{() -> activity.onClickGoToKelilingPersegiPanjang()}"
-            android:id="@+id/button3"
+            android:onClick="@{() -> activity.onClickHitung()}"
+            android:id="@+id/buttonHitung"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Keliling persegi panjang"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Hitung Keliling Persegi"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextLebar" />
 
-        <Button
-            android:onClick="@{() -> activity.onClickGoToLuasSegitiga()}"
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Luas Segitiga"
+            android:text="Hasil"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonHitung" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

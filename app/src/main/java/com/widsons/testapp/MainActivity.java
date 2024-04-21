@@ -23,13 +23,24 @@ public class MainActivity extends AppCompatActivity {
         binding.setActivity(this);
     }
 
-    public void onClickGoToPageOne() {
-        Intent intentOne = new Intent(this, PageOneActivity.class);
-        startActivity(intentOne);
+    public void onClickGoToLuasLingkaran() {
+        Intent intent = new Intent(this, LuasLingkaranActivity.class);
+        startActivity(intent);
     }
 
-    public void onClickGoToPageTwo() {
-        Intent intentTwo = new Intent(this, PageTwoActivity.class);
-        startActivity(intentTwo);
+    public void onClickGoToKelilingLingkaran() {
+        Intent intent = new Intent(this, KelilingLingkaranActivity.class);
+        startActivity(intent);
     }
+
+    public void onClickGoToKelilingPersegiPanjang() {
+        Intent intent = new Intent(this, PersegiPanjangActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickGoToLuasSegitiga() {
+        Intent intent = new Intent(this, SegiTigaActivity.class);
+        startActivity(intent);
+    }
+
 }

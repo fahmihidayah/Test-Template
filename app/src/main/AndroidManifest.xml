@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TestAPp"
         tools:targetApi="31">
         <activity
+            android:name=".SegiTigaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersegiPanjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelilingLingkaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LuasLingkaranActivity"
+            android:exported="false" />
+        <activity
             android:name=".PageThreeActivity"
             android:exported="false" />
         <activity
